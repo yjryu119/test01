@@ -91,13 +91,13 @@ const App = () => {
         <ScrollTop />
         <NavBar keyword={keyword} setKeyword={setKeyword}></NavBar>
         <Routes>
-          <Route path="/test01/" element={<Main productInfo={productInfo} keyword={keyword} setKeyword={setKeyword}></Main>}></Route>
-          <Route path="/test01/category" element={<Category category={true} productInfo={productInfo}></Category>}></Route>
-          <Route path="/test01/search" element={<Category search={true} keyword={keyword} productInfo={productInfo}></Category>}></Route>
-          <Route path="/test01/product/:productId" element={<Detail cartStatus={cartStatus} productInfo={productInfo} setCartStatus={setCartStatus}></Detail>}></Route>
-          <Route path="/test01/blog/:blogID" element={<Blog></Blog>}></Route>
-          <Route path="/test01/cart" element={<Cart cartStatus={cartStatus} setCartStatus={setCartStatus}></Cart>}></Route>
-          <Route path="/test01/test" element={<Test></Test>}></Route>
+          <Route path="/" element={<Main productInfo={productInfo} keyword={keyword} setKeyword={setKeyword}></Main>}></Route>
+          <Route path="/category" element={<Category category={true} productInfo={productInfo}></Category>}></Route>
+          <Route path="/search" element={<Category search={true} keyword={keyword} productInfo={productInfo}></Category>}></Route>
+          <Route path="/product/:productId" element={<Detail cartStatus={cartStatus} productInfo={productInfo} setCartStatus={setCartStatus}></Detail>}></Route>
+          <Route path="/blog/:blogID" element={<Blog></Blog>}></Route>
+          <Route path="/cart" element={<Cart cartStatus={cartStatus} setCartStatus={setCartStatus}></Cart>}></Route>
+          <Route path="/test" element={<Test></Test>}></Route>
           {/* <Route path="/profiles/:search" element={<Profile></Profile>} /> */}
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
