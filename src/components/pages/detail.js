@@ -151,7 +151,7 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
         </div>
       </div>
       {/* <ItemList grid={"four"} titleLists={relatedProducts} src={relatedProducts.src} /> */}
-      <PopupLayer layer={layer} layerText={`해당 상품 ${productQuantity}개가 장바구니에 담겼습니다.`} setLayer={setLayer} btnBottom={"CLOSE"}></PopupLayer>
+      <PopupLayer layer={layer} layerText={`${productQuantity} products has been added to your cart.`} setLayer={setLayer} btnBottom={"CLOSE"}></PopupLayer>
 
       {/* <h3>{productId}번 글 입니다.</h3> */}
       {/* <div>{location.pathname}</div> */}
