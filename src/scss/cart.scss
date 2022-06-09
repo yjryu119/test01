@@ -1,0 +1,18 @@
+.cart {
+  margin: 0 50px;
+  min-height: 45vh;
+  .table {
+    margin-bottom: 100px;
+    vertical-align: middle;
+  }
+  tbody {
+    border-bottom: 1px solid #d9d9d9 !important;
+    border-top: 1px solid #d9d9d9 !important;
+  }
+  #deleteBtn {
+    padding: 5px 10px;
+  }
+  @media (max-width: 991px) {
+    margin: 0 10px;
+  }
+}

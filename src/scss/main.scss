@@ -1,0 +1,50 @@
+* {
+  font-size: 13px;
+  letter-spacing: 0.04px;
+}
+.carouselFade {
+  img {
+    object-fit: cover;
+    // object-position: bottom;
+    // object-position: 100% 38%;
+    height: 80vh;
+    width: 100%;
+  }
+  :first-child > img {
+    object-position: 50% 45%;
+  }
+  :nth-child(2) > img {
+    object-position: 50% 40%;
+  }
+}
+#navbarScroll {
+  > div {
+    width: 33%;
+  }
+  > form {
+    @extend div;
+    justify-content: flex-end;
+    input {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0px;
+      background-color: transparent;
+      width: 50%;
+    }
+  }
+  > a {
+    @extend div;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card-wrapper > div {
+  margin: 0 40px;
+}
+.card {
+  border: none;
+  margin: 0 20px;
+}
