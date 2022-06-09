@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Main from "./components/pages/main/main";
 import Category from "./components/pages/category/category";
 import Detail from "./components/pages/detail";
@@ -87,7 +87,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <ScrollTop />
         <NavBar keyword={keyword} setKeyword={setKeyword}></NavBar>
         <Routes>
@@ -102,7 +102,7 @@ const App = () => {
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
         <Footer></Footer>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
