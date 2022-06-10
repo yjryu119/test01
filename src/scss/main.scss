@@ -17,29 +17,6 @@
     object-position: 50% 40%;
   }
 }
-#navbarScroll {
-  > div {
-    width: 33%;
-  }
-  > form {
-    @extend div;
-    justify-content: flex-end;
-    input {
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-radius: 0px;
-      background-color: transparent;
-      width: 50%;
-    }
-  }
-  > a {
-    @extend div;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 
 .card-wrapper > div {
   margin: 0 40px;
