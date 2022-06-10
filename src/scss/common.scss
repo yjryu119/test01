@@ -94,6 +94,9 @@ h1 {
       justify-content: center;
     }
   }
+  .dropdown-item {
+    pointer-events: none;
+  }
 }
 .navOutline {
   :focus {
