@@ -43,10 +43,12 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
 
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
+  const [productImg, setProductImg] = useState("");
 
   useEffect(() => {
     setProductName(productInfo[location.pathname.substring(9)].title);
     setProductPrice(productInfo[location.pathname.substring(9)].price);
+    setProductImg(productInfo[location.pathname.substring(9)].src);
   }, []);
 
   const cartInfo = [
@@ -138,7 +140,7 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
             </Button>
           </div>
           <div className="scrollAuto">
-            <img alt="" src={Detail01}></img>
+            <img alt="" src={productImg}></img>
             <br />
             <br />
             <br />
@@ -151,7 +153,7 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
         </div>
       </div>
       {/* <ItemList grid={"four"} titleLists={relatedProducts} src={relatedProducts.src} /> */}
-      <PopupLayer layer={layer} layerText={`${productQuantity} products has been added to your cart.`} setLayer={setLayer} btnBottom={"CLOSE"}></PopupLayer>
+      <PopupLayer layer={layer} layerText={`${productQuantity} item(s) has been added to your cart.`} setLayer={setLayer} btnBottom={"CLOSE"}></PopupLayer>
 
       {/* <h3>{productId}번 글 입니다.</h3> */}
       {/* <div>{location.pathname}</div> */}

@@ -1,8 +1,8 @@
 .detail {
   .flexBox {
     display: flex;
-    height: calc(100vh - 52px);
-    position: relative;
+    // height: calc(100vh - 52px);
+    // position: relative;
     border-bottom: 1px solid #d9d9d9;
   }
   .scrollAuto {
@@ -24,13 +24,14 @@
   }
 
   .scrollFixed {
-    // position: absolute;
     overflow: scroll;
     height: 100%;
     padding: 100px 0 100px 300px;
     width: 550px;
     min-width: 550px;
     background-color: white;
+    position: sticky;
+    top: 57px;
   }
   .quantityBtn {
     margin-bottom: 5px;
